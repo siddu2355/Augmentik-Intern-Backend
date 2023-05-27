@@ -13,7 +13,7 @@ if (!config.get("jwtPrivateKey")) {
 
 mongoose
   .connect(
-    "mongodb://localhost:27017/augmentik"
+    "mongodb+srv://siddusirasanambeti:siddu2355@cluster0.93e2zih.mongodb.net/augmentik?retryWrites=true&w=majority"
   )
   .then(() => console.log("Connected to mongoDB..."))
   .catch((e) => console.log("could not connect to mongoDB", e));
