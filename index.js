@@ -16,7 +16,7 @@ mongoose
     "mongodb://localhost:27017/augmentik"
   )
   .then(() => console.log("Connected to mongoDB..."))
-  .catch((e) => console.log("could not connect to mongoDB", ex));
+  .catch((e) => console.log("could not connect to mongoDB", e));
 
 app.use(express.json());
 app.use(cors());
